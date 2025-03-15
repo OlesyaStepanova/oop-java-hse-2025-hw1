@@ -1,27 +1,31 @@
-/**
- * Класс Sugar
- *
- * Поля (примерная идея):
- *   - private String sugarLevel; // Например: "Без сахара", "Мало сахара", "Много сахара"
- *   - private double sugarPrice; // надбавка к цене (может быть 0 для "Без сахара", 10.0 для "Много" и т.д.)
- *
- * Геттеры/сеттеры:
- *   - getSugarLevel(), setSugarLevel(...)
- *   - getSugarPrice(), setSugarPrice(...)
- *
- * Методы (примерные идеи):
- *   - getSugarDescription(): String
- *       (может возвращать что-то вроде: "Добавлен сахар: <уровень>")
- */
+// Source code is decompiled from a .class file using FernFlower decompiler.
 public class Sugar {
-    // Напишите код здесь (объявление полей)
-
-    // Напишите код здесь (конструкторы)
-
-    // Напишите код здесь (геттеры/сеттеры)
-
-    // public String getSugarDescription() {
-    //     // Напишите код здесь, возвращая текстовое описание уровня сахара
-    //     // Например: return "Уровень сахара: " + sugarLevel;
-    // }
-}
+    private String sugarLevel;
+    private double sugarPrice;
+ 
+    public Sugar(String sugarLevel, double sugarPrice) {
+       this.sugarLevel = sugarLevel;
+       this.sugarPrice = sugarPrice;
+    }
+ 
+    public String getSugarLevel() {
+       return this.sugarLevel;
+    }
+ 
+    public void setSugarLevel(String sugarLevel) {
+       this.sugarLevel = sugarLevel;
+    }
+ 
+    public double getSugarPrice() {
+       return this.sugarPrice;
+    }
+ 
+    public void setSugarPrice(double sugarPrice) {
+       this.sugarPrice = sugarPrice;
+    }
+ 
+    public String getSugarDescription() {
+       return "Уровень сахара: " + this.sugarLevel;
+    }
+ }
+ 
